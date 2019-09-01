@@ -7,13 +7,13 @@ API para gerenciar contatos
 3: Rodar o projeto e testar as rotas
 
 Agenda de Contato
+
 	-Contato
 	* Nome
 	* Endereço
 	* Lista de e-mail
 	* Lista de telefone
 	* Data de Nascimento
-
 	-Funcionalidades
 	* Buscar pelo ID
 	* Buscar pelo Nome

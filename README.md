@@ -20,5 +20,5 @@ Agenda de Contato
 	  - Buscar pelo Email
 	  - Listar todos Contatos
 	  - Inserir Contato
-    - Editar Contato
+      - Editar Contato
 	  - Excluir Contato

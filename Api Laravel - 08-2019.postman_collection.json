@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "c1fa32a7-5406-4a6e-890e-9cecfe5b9948",
+		"name": "Api Laravel - 08/2019",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Contato ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/contato/id/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"contato",
+						"id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Contato Nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/contato/nome/jos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"contato",
+						"nome",
+						"jos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Contato Email",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "email",
+						"value": "maria@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8001/contato/email/mar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"contato",
+						"email",
+						"mar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Contatos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "email",
+						"value": "maria@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8001/contatos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"contatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Contato",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "email",
+						"value": "maria@gmail.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"value": "eyJpdiI6IkppZ1VscWxwUTNscllkUlNxbnRtQ1E9PSIsInZhbHVlIjoiNVwvXC9cLzdmNkdheGZPUjlOaTVWUzkzSlNJOWkzeThVUDNFRFBVYm15QStFc3g1ODdpWDFrSXkzTFJVQTRQQ0dRcyIsIm1hYyI6IjdkNDBkMmNmNWRlMjM2MTE5MzQxMTkzYjlkY2EzYjFiYjZjOWM1MDVjZDA3NGM3M2M2ZDgzYjk0OTM1MzdmMTMifQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\" : \"Antonio\",\n\t\"endereco\" : \"Rua Oceanica\",\n\t\"dataNasc\" : \"05/05/2005\",\n\t\"email\" : \"antonio@unifacs.edu.br;antonio.larazo@gmail.com\",\n\t\"telefone\" : \"(77);(88)\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/contato",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"contato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Contato",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "email",
+						"value": "maria@gmail.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 28,\n\t\"nome\" : \"André\",\n\t\"endereco\" : \"Rua Amazonas\",\n\t\"dataNasc\" : \"05/05/2003\",\n\t\"email\" : \"antonio.larazo@gmail.com;andre@gmail.com\",\n\t\"telefone\" : \"(99);(88)\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/contato",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"contato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Contato",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "email",
+						"value": "maria@gmail.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\" : 27\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/contato",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"contato"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

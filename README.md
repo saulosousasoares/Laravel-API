@@ -2,9 +2,8 @@
 API para gerenciar contatos
   
 - Colocar o banco mysql (api_bd.sql)
-- Instalar o Laravel (versão utilizada foi o 5.8.35)
-- Necessário ter o postman e importar o colletion.json (Api Laravel - 08-2019.postman_collection.json)
-- Rodar o projeto e testar as rotas
+- Importar no Postman o colletion.json (Api Laravel - 08-2019.postman_collection.json)
+- Versão do Laravel utilizada foi a 5.8.35
 
 Agenda de Contato
 
